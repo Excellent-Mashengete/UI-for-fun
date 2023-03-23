@@ -1,0 +1,230 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.responsive{
+    display: none !important;
+}  
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media screen and (max-width:1023px){ 
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+    
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+    .responsive{
+        display: contents !important;
+    }    
+}
+/* 
+
+main{
+    justify-content: center;
+}
+
+
+.cards { 
+    box-sizing: content-box;
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.card2 {
+    width: 60%;
+}
+.card1 img{
+    width: 500px;
+    height: 600px;
+}
+.card2 h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+.card2 p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: hsl(0, 0%, 41%);
+}
+.paragraph{
+    width: 400px;
+    margin: 0% 0% 5% 0%;
+}
+.headerM{
+    display: none;
+}
+
+.more_button{
+    margin: 0% 0% 5% 0%;
+}
+
+.more_button button{
+    width: 18%;
+    padding: 1.1em;
+    text-align: center;
+    background: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    border-radius: 1em;
+}
+.icons{
+    display: flex;
+    justify-content: space-between !important;
+    width: 60%;
+}
+.icons img{
+    height: 20px;
+} */
+
+.navbar{
+    background: none;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-toggler{
+    background: none;
+    border: none;
+    align-self: start;
+}
+
+
+/* Media queries for tablet*/
+@media screen and (max-width: 1023px){
+    .card1 img{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .cards { 
+        box-sizing: content-box;
+        margin-top:2%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-content: center;
+        justify-content: center;
+        text-align: center;    
+    }
+    .card2 {
+        padding: 0rem 0.6rem;
+        width: unset;
+    }
+    .card2 h1 {
+        font-size: 2.5rem;
+    }
+    .card2 p {
+        width: 60%;
+        font-size: 20px;
+        line-height: 1.5em;
+        color: hsl(0, 0%, 41%);
+        display: inline-flex;
+    }
+    .paragraph{
+        width:unset;
+        margin: 0% 0% 7% 0%;
+    }
+    .header{
+        display: none;
+    }
+    .headerM{
+        display: contents;
+    }
+    .more_button{
+        padding: 0% 0% 10% 0%;
+    }
+    
+    .more_button button{
+        width: 40%; 
+        padding: 1.1em;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        background: hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 98%);
+        border-radius: 1em;
+    }
+
+    .more_button button:hover{
+        color: hsl(0, 0%, 8%);
+        background: hsl(0, 0%, 98%);
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .icons img{
+        width: 20%;
+        height: 20%;
+    }
+}
+
+/* Media queries for Mobile*/
+@media screen and (max-width: 767px){
+    .card2 h1 {
+        font-size: 2.3rem !important;
+    }
+    .card2 p {
+        width: 100%  !important;
+        font-size:  18px !important;
+        font-weight: 700  !important;
+        line-height: 1.5em !important;
+        color: hsl(0, 0%, 41%) !important;
+        display: inline-flex !important;
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .icons img{
+        width: 20%;
+        height: 20%;
+    }
+}
